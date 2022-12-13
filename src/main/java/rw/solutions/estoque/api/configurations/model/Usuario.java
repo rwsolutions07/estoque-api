@@ -1,6 +1,5 @@
 package rw.solutions.estoque.api.configurations.model;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -9,7 +8,7 @@ import java.util.Objects;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-public class Usuario implements Serializable, UserDetails {
+public class Usuario implements UserDetails {
 
 	/**
 	 * 
@@ -23,9 +22,6 @@ public class Usuario implements Serializable, UserDetails {
 	private String usuarioPassword;
 	private List<Perfil> perfis = new ArrayList<Perfil>();
 	
-	public Usuario() {
-		// TODO Auto-generated constructor stub
-	}
 	
 	public Usuario(Long id, String nome, String usuarioUsername, String usuarioPassword, List<Perfil> perfis) {
 		super();

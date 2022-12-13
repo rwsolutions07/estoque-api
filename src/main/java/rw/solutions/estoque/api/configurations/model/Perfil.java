@@ -1,11 +1,10 @@
 package rw.solutions.estoque.api.configurations.model;
 
-import java.io.Serializable;
 import java.util.Objects;
 
 import org.springframework.security.core.GrantedAuthority;
 
-public class Perfil implements Serializable, GrantedAuthority {
+public class Perfil implements GrantedAuthority {
 
 	/**
 	 * 
@@ -15,9 +14,6 @@ public class Perfil implements Serializable, GrantedAuthority {
 	private Long id;
 	private String nome;
 	
-	public Perfil() {
-		// TODO Auto-generated constructor stub
-	}
 	
 	public Perfil(Long id, String nome) {
 		super();
